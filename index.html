@@ -208,7 +208,7 @@ background: linear-gradient(to bottom, #F16529, #E44D26); /* W3C, IE 10+/ Edge, 
 
             let datos = await axios('https://s3.amazonaws.com/dolartoday/data.json')
              
-            dollar = datos.data.USD.promedio
+            dollar = datos.data.USD.promedio_real
 
             let elementoDolarPrice = document.getElementById('dolarprice')
             document.getElementById('date').innerHTML = datos.data._timestamp.fecha
